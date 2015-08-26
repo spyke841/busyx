@@ -3,7 +3,7 @@
     <ul>
       <li><a href="#"><i class="fa fa-home"></i> Accueil<i class="pull-right fa fa-caret-down"></i></a>
         <ul>
-          <li><a href="?p=news">News</a></li>
+          <li><a href="?p=accueil.news">News</a></li>
           <li><a href="#">Dernières commandes</a></li>
           <li><a href="#">Vos filleuls</a></li>
         </ul>

@@ -1,4 +1,3 @@
-
 <div class="row">
   <div class="col-md-12">
     <ul class="pagination center-block">
@@ -16,7 +15,6 @@
     </ul>
   </div>
 </div>
-
 <?php for ($i=0; $i < 5; $i++):?>
   <article class="articleNews row">
     <div class="col-md-12">

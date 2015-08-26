@@ -52,5 +52,14 @@ if (isset($title)) {
     <div class="clearfix"></div>
   </nav>
   <div class="breadcrumb">
-    
+    <ul>
+      <?php foreach ($position as $key => $value): ?>
+        <?php $lastPosItem = end($position); ?>
+        <?php if ($key == $lastPosItem): ?>
+          <li class="current"><?= $value ?></li>
+        <?php else: ?>
+          <li class="last"><?= $value ?></li>
+        <?php endif; ?>
+      <?php endforeach; ?>
+    </ul>
   </div>
