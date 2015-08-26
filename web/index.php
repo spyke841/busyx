@@ -14,7 +14,7 @@ $routes = ['home',
 ob_start();
 
 if (preg_match('#.#', $p)) {
-  $way = explode('.', $p);
+  $way = explode('.', $p); 
   $dossier = $way[0];
   $p = $way[1];
   $niv = 1;
