@@ -5,10 +5,16 @@ if (isset($_GET['p'])) {
 } else {
   $p = 'home';
 }
-$routes = ['home',
-          'news',
-          'accueil' => ['news', 'dernieres_commandes', 'vos_filleuls'],
-          'outils_de_promos' => ['webservice', 'marques_blanches'],
+$routes = ['home' => 'home',
+          'accueil' => [
+                      'news' => 'News',
+                      'dernieres_commandes' => 'Dernières commandes',
+                      'vos_filleuls' => 'Vos filleuls'
+          ],
+          'outils_de_promos' => [
+                      'webservice' => 'Webservice',
+                      'marques_blanches'
+          ],
 ];
 
 ob_start();
@@ -27,9 +33,18 @@ if (preg_match('#.#', $p)) {
   $link[0] = '?p=' . $p;
   $filename = '../pages/' . $p . '.php';
 }
-
-if (in_array($p, $routes)) {
-
+$ok = 0;
+if ($niv == 1) {
+  if (array_key_exists($p, $routes[$way[0]])) {
+    $ok = 1;
+  }
+}
+if ($niv == 0) {
+  if (array_key_exists($p, $route)) {
+    $ok = 1;
+  }
+}
+if ($ok == 1) {
   if (file_exists($filename)) {
     if ($niv == 1) {
       $position = [$way[0], $way[1]];
