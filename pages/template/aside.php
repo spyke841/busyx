@@ -11,7 +11,7 @@
 
       <li><a href="#"><i class="fa fa-object-group"></i> Outils de promo<i class="pull-right fa fa-caret-down"></i></a>
         <ul>
-          <li><a href="#">Webservice</a></li>
+          <li><a href="?p=outils_de_promos.webservice">Webservice</a></li>
           <li><a href="#">Marques blanches</a></li>
           <li><a href="#">Bandeaux de pub</a></li>
           <li><a href="#">Blocs dynamiques</a></li>

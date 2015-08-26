@@ -38,7 +38,7 @@ if (isset($title)) {
     <div class="col-xs-2">
       <div class="txt-white pull-right txt-center">
         <i class="fa fa-user fa-2"></i><br>
-        connectez-vous
+        <span class="hidden-xs">connectez-vous</span>
       </div>
     </div>
     <div class="clearfix"></div>
@@ -51,15 +51,18 @@ if (isset($title)) {
     </div>
     <div class="clearfix"></div>
   </nav>
-  <div class="row">
-    <ul class="breadcrumb">
-      <?php foreach ($position as $key => $value): ?>
-        <?php $firstPosItem = array_values($array)[0]; ?>
-        <?php if ($key == $firstPosItem): ?>
-          <li class="first"><a href="<?= $link[$key] ?>"><?= $value ?></a></li>
-        <?php else: ?>
-          <li class="current"><a href="<?= $link[$key] ?>"><?= $value ?></a></li>
-        <?php endif; ?>
-      <?php endforeach; ?>
-    </ul>
+
+  <div class="container">
+    <div class="row">
+      <ul class="breadcrumb">
+        <?php foreach ($position as $key => $value): ?>
+          <?php $firstPosItem = array_values($array)[0]; ?>
+          <?php if ($key == $firstPosItem): ?>
+            <li class="first"><a href="<?= $link[$key] ?>"><?= str_replace('_', ' ', $value) ?></a></li>
+          <?php else: ?>
+            <li class="current"><a href="<?= $link[$key] ?>"><?= str_replace('_', ' ', $value) ?></a></li>
+          <?php endif; ?>
+        <?php endforeach; ?>
+      </ul>
+    </div>
   </div>

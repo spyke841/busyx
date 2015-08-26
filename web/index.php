@@ -8,7 +8,7 @@ if (isset($_GET['p'])) {
 $routes = ['home',
           'news',
           'accueil' => ['news', 'dernieres_commandes', 'vos_filleuls'],
-          'outil_de_promos' => ['webservice', 'marques_blanches'],
+          'outils_de_promos' => ['webservice', 'marques_blanches'],
 ];
 
 ob_start();
@@ -41,10 +41,12 @@ if (in_array($p, $routes)) {
     require $filename;
   }
   else {
+  $not_found = 'le fichier de la page n\'existe pas';
     require '../pages/404.php';
   }
 }
 else {
+$not_found = $filename . ' n\'est pas dans le tableau des routes';
   require '../pages/404.php';
 }
 
