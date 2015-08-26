@@ -51,3 +51,6 @@ if (isset($title)) {
     </div>
     <div class="clearfix"></div>
   </nav>
+  <div class="breadcrumb">
+    
+  </div>

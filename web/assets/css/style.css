@@ -56,11 +56,11 @@ p {
   text-align: right;
 }
 /*Fil d'ariane*/
-ul.breadcrumb {
+ul.pagination {
   text-align: center;
   padding-left: 0;
 }
-ul.breadcrumb li {
+ul.pagination li {
   display: inline-block;
   position: relative;
   /* float: left; */
@@ -71,10 +71,10 @@ ul.breadcrumb li {
   margin: 0 -2px 0 -2px;
   border-bottom: solid 2px #eee;
 }
-ul.breadcrumb li.current {
+ul.pagination li.current {
   font-weight: bold;
 }
-ul.breadcrumb li.current::after {
+ul.pagination li.current::after {
   content: '\f0d8';
   position: absolute;
   bottom: -18px;

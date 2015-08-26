@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-12">
-    <ul class="breadcrumb center-block">
+    <ul class="pagination center-block">
       <li class="first"><a href="#">1</a></li>
       <li><a href="#">2</a></li>
       <li><a href="#">3</a></li>
