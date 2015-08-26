@@ -56,55 +56,63 @@ p {
   text-align: right;
 }
 /*Fil d'ariane*/
-.breadcrumb ul li {
-  position: relative;
-  display: inline-block;
-  list-style: none;
-  line-height: 23px;
-  background-color: #F47A00;
-  color: #fff;
-  margin-left: -4px;
-  padding: 0 15px 0 20px;
+.breadcrumb {
+	list-style: none;
+	overflow: hidden;
 }
-.breadcrumb ul li.current::before, .breadcrumb ul li.last::before {
-  content: '';
-  z-index: 1;
-  position: absolute;
-  background-color: inherit;
-  width: 16px;
-  height: 16px;
-  top: 3px;
-  right: -8px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
+.breadcrumb li {
+	float: left;
 }
-.breadcrumb ul li.current::before {
-  border-right: solid 3px #FFF;
-  border-top: solid 3px #fff;
-  background-color: transparent;
-  width: 25px;
-  height: 25px;
-  top: -1px;
+.breadcrumb li a {
+	color: white;
+	text-decoration: none;
+	padding: 4px 0 4px 65px;
+	/*background: hsla(34,85%,35%,1);*/
+  background-color: rgb(249,135,0);
+	position: relative;
+	display: block;
+	float: left;
+  font-size: 1.2em;
 }
-.breadcrumb ul li.last::before {
-  border: none;
+.breadcrumb li.first a {
+  padding-left: 20px;
 }
-/*.breadcrumb ul li::after {
-  content: '';
-  z-index: 99;
-  position: absolute;
-  background-color: #fff;
-  width: 16px;
-  height: 16px;
-  top: 3px;
-  left: -9px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-}*/
+.breadcrumb li a:after {
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;           /* Go big on the size, and let overflow hide */
+	border-bottom: 50px solid transparent;
+	/*border-left: 30px solid hsla(34,85%,35%,1);*/
+  border-left: 30px solid rgb(249,135,0);
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	left: 100%;
+	z-index: 2;
+}
+.breadcrumb li a:before {
+	content: " ";
+	display: block;
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-bottom: 50px solid transparent;
+	border-left: 30px solid white;
+	position: absolute;
+	top: 50%;
+	margin-top: -50px;
+	margin-left: 1px;
+	left: 100%;
+	z-index: 1;
+}
+.breadcrumb li a:hover {
+  background-color: rgb(255, 176, 83);
+}
+.breadcrumb li a:hover::after {
+  border-left: 30px solid rgb(255, 176, 83);
+}
 
 /* Pagination */
 ul.pagination {
@@ -359,7 +367,6 @@ aside#aside {
 /*Page news*/
 .news {
   background-color: #F9F9F9;
-  /*padding: 5px;*/
   margin-bottom: 30px;
   border: solid 1px #ddd;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3);

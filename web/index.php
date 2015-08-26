@@ -14,14 +14,17 @@ $routes = ['home',
 ob_start();
 
 if (preg_match('#.#', $p)) {
-  $way = explode('.', $p); 
+  $way = explode('.', $p);
   $dossier = $way[0];
   $p = $way[1];
   $niv = 1;
+  $link[0] = '?p=' . $way[0];
+  $link[1] = '?p=' . $way[0] . '.' . $way[1];
   $filename = '../pages/' . $dossier . '/' . $way[1] . '.php';
 } else {
   $niv = 0;
   $p = $p;
+  $link[0] = '?p=' . $p;
   $filename = '../pages/' . $p . '.php';
 }
 

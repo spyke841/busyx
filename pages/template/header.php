@@ -51,14 +51,14 @@ if (isset($title)) {
     </div>
     <div class="clearfix"></div>
   </nav>
-  <div class="breadcrumb">
-    <ul>
+  <div class="row">
+    <ul class="breadcrumb">
       <?php foreach ($position as $key => $value): ?>
-        <?php $lastPosItem = end($position); ?>
-        <?php if ($key == $lastPosItem): ?>
-          <li class="current"><?= $value ?></li>
+        <?php $firstPosItem = array_values($array)[0]; ?>
+        <?php if ($key == $firstPosItem): ?>
+          <li class="first"><a href="<?= $link[$key] ?>"><?= $value ?></a></li>
         <?php else: ?>
-          <li class="last"><?= $value ?></li>
+          <li class="current"><a href="<?= $link[$key] ?>"><?= $value ?></a></li>
         <?php endif; ?>
       <?php endforeach; ?>
     </ul>
