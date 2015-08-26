@@ -1,3 +1,4 @@
+
 <div class="row">
   <div class="col-md-12">
     <ul class="pagination center-block">
@@ -15,10 +16,17 @@
     </ul>
   </div>
 </div>
+
 <?php for ($i=0; $i < 5; $i++):?>
+<h2 class="entete">SOLDES</h2>
+  <?php if ($i%2 == 0): ?>
+<div class="bg_white">
+  <?php else: ?>
+<div class="bg_grey">
+  <?php endif; ?>
+  <div class="container">
   <article class="articleNews row">
     <div class="col-md-12">
-      <h2 class="entete">SOLDES</h2>
       <div class="news">
         <p>
           Les SOLDES d'été 2015 commencent le 24 juin et il y a des bandeaux spécialement dédiés à la mise en avant des soldes sur vos espaces publicitaires !
@@ -50,4 +58,6 @@
       </div>
     </div>
   </article>
+  </div>
+</div>
 <?php endfor; ?>

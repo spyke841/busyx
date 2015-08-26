@@ -18,6 +18,12 @@
 </div>
 
 <?php for ($i=0; $i < 5; $i++):?>
+  <?php if ($i%2 == 0): ?>
+<div class="bg_white">
+  <?php else: ?>
+<div class="bg_grey">
+  <?php endif; ?>
+  <div class="container">
   <article class="articleNews row">
     <div class="col-md-12">
       <h2 class="entete">SOLDES</h2>
@@ -52,4 +58,6 @@
       </div>
     </div>
   </article>
+  </div>
+</div>
 <?php endfor; ?>

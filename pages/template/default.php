@@ -1,6 +1,6 @@
 <?php require 'header.php' ?>
 <?php require 'aside.php' ?>
-<div id="content" class="container">
+<div id="content">
   <?= $content ?>
 </div>
 <?php require 'script.php' ?>

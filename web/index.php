@@ -1,5 +1,5 @@
 <?php
-
+unset($p);
 if (isset($_GET['p'])) {
   $p = $_GET['p'];
 } else {
@@ -16,10 +16,9 @@ $routes = ['home' => 'home',
                       'marques_blanches'
           ],
 ];
-
 ob_start();
 
-if (preg_match('#.#', $p)) {
+if (preg_match('#\.#', $p)) {
   $way = explode('.', $p);
   $dossier = $way[0];
   $p = $way[1];
@@ -40,10 +39,11 @@ if ($niv == 1) {
   }
 }
 if ($niv == 0) {
-  if (array_key_exists($p, $route)) {
+  if (array_key_exists($p, $routes) || in_array($p, $routes)) {
     $ok = 1;
   }
 }
+
 if ($ok == 1) {
   if (file_exists($filename)) {
     if ($niv == 1) {

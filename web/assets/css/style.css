@@ -38,6 +38,9 @@ p {
 .bg_white {
   background-color: #fff;
 }
+.bg_grey {
+  background-color: #ddd;
+}
 
 .txt-white {
   color: #fff;
@@ -376,14 +379,14 @@ aside#aside {
 }
 
 /*Page news*/
-.news {
+/*.news {
   background-color: #F9F9F9;
   margin-bottom: 30px;
   border: solid 1px #ddd;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-}
+}*/
 h2.entete {
-  margin: 0;
+  margin: 40px 0 0 10px;
   width: 80%;
   border-top-right-radius: 1em;
   border-top-left-radius: 0.5em;
