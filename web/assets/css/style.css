@@ -18,9 +18,25 @@
   font-family: 'Arimo-Italic';
   src: url('../fonts/Arimo-Italic.ttf');
 }
+body {
+  color: #555;
+}
 p {
   padding-left: 5px;
   padding-right: 5px;
+}
+button, input, select, textarea {
+  line-height: 24px;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #666;
+}
+
+select, option {
+  -webkit-appearance: menulist;
+  height: 30px;
+  line-height: 30px;
 }
 button {
   border: none;
@@ -30,6 +46,9 @@ button {
 }
 button:hover {
   background-color: #dd4200;
+}
+.marge-down {
+  margin-bottom: 20px;
 }
 #content {
   min-height: 900px;
@@ -411,7 +430,7 @@ aside#aside {
   box-shadow: inset -1px -5px 11px rgb(223, 72, 0);
 }*/
 .entete {
-  margin: 0 0 0 10px;
+  margin: 0;
   width: 80%;
    /*border-top-right-radius: 1em;*/
    /*border-top-left-radius: 0.5em;*/
@@ -427,7 +446,7 @@ aside#aside {
     margin-bottom: 40px;
 }
 .row {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 thead.table-head {
   background-color: #f98700;

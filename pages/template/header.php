@@ -19,6 +19,7 @@ if (isset($title)) {
   <link rel="stylesheet" href="/assets/css/table.css" media="screen">
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css" media="screen">
   <link rel="stylesheet" href="/assets/css/style.css" media="screen">
+  <link rel="stylesheet" href="/assets/css/syntax/default.css">
   <title>Busyx | <?= $title ?></title>
 </head>
 <body>
@@ -55,6 +56,9 @@ if (isset($title)) {
 
   <div class="container">
     <div class="row">
+      <small>
+        vous êtes ici :
+      </small>
       <ul class="breadcrumb">
         <?php foreach ($position as $key => $value): ?>
           <?php $firstPosItem = array_values($array)[0]; ?>

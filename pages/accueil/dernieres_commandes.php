@@ -4,7 +4,7 @@
 <section class="container">
   <article class="row">
     <div class="col-md-12">
-      <div class="dernieres_commandes">
+      <div class="contenu">
         <h2>Commandes n'ayant pas encore fait l'objet d'un appel à facturation</h2>
         Vous n'avez pas encore généré de commande ferme pour la période en cours.
         <ul>

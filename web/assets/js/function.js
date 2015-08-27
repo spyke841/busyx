@@ -1,3 +1,10 @@
+function ClipBoard()
+{
+  holdtext.innerText = copytext.innerText;
+  Copied = holdtext.createTextRange();
+  Copied.execCommand("Copy");
+}
+
 $(document).ready(function(){
   $('#nav-icon').click(function(e){
     e.preventDefault();

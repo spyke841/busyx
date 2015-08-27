@@ -4,7 +4,7 @@
 <section class="container">
   <article class="row">
     <div class="col-md-12">
-      <div class="webservice">
+      <div class="contenu">
         <table class="table table-bordered">
           <caption>Liste de vos domaines</caption>
           <thead class="table-head">

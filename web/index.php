@@ -17,7 +17,8 @@ $routes = ['home' => 'home',
           ],
           'outils_de_promos' => [
                       'webservice' => 'Webservice',
-                      'marques_blanches'
+                      'marques_blanches' => 'Marques Blanches',
+                      'bandeaux_de_pub' => 'Bandeaux de pub',
           ],
 ];
 ob_start();
