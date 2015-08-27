@@ -1,4 +1,8 @@
-<?php $title = 'Bandeaux de pub'; ?>
+<?php
+$title = 'Bandeaux de pub';
+$script_js[] = 'ZeroClipboard.min.js';
+$script_js[] = 'highlight.pack.js';
+?>
 <h1 class="entete">Bandeaux de pub</h2>
 <div class="wrapper">
 <section class="container">
@@ -62,15 +66,14 @@
       <figcaption class="txt-center">Taille : 950 x 270</figcaption>
       <img class="img-responsive center-block marge-down" src="http://images.netcomvad.com/spb/soldesEte2015/950x270.jpg">
       <figcaption class="txt-right">
-        <button type="button" name="button">Voir le code <i class="fa fa-caret-down"></i></button>
-        <div class="code">
+        <button class="view_code" type="button" name="button" rel="code_0">Voir le code <i class="fa fa-caret-down"></i></button>
+        <button class="code_to_copy" rel="msg_0" id="target-to-copy_0" data-clipboard-target="clipboard-text_0" type="button_2" name="button" alt="copier le code" title="copier le code"><i class="fa fa-clipboard"></i></button>
+        <span class="cacher msg_0"></span>
+        <code id="code_0" class="code cacher">
           <pre class="txt-left">
-            <code class="html"><?= htmlspecialchars('
-            <a href="http://sexshop.stocksexy.com/" target="_blank">
-              <img src="http://images.netcomvad.com/spb/soldesEte2015/950x270.jpg" width="950" height="270">
-            </a>') ?></code>
+            <code class="html small" id="clipboard-text_0"><?= htmlspecialchars('<a href="http://sexshop.stocksexy.com/" target="_blank">'."\n\t".'<img src="http://images.netcomvad.com/spb/soldesEte2015/950x270.jpg" width="950" height="270">'."\n".'</a>') ?></code>
           </pre>
-        </div>
+        </code>
       </figcaption>
     </figure>
   </div>
@@ -79,16 +82,14 @@
       <figcaption class="txt-center">Taille : 739 x 208</figcaption>
       <img class="img-responsive center-block marge-down" src="http://images.netcomvad.com/spb/soldesEte2015/739x208.jpg">
       <figcaption class="txt-right">
-        <button type="button" name="button">Voir le code <i class="fa fa-caret-down"></i></button>
-        <div class="code">
+        <button class="view_code" type="button" name="button"rel="code_1">Voir le code <i class="fa fa-caret-down"></i></button>
+        <button class="code_to_copy" rel="msg_1" id="target-to-copy_1" data-clipboard-target="clipboard-text_1" type="button" name="button" alt="copier le code" title="copier le code"><i class="fa fa-clipboard"></i></button>
+        <span class="cacher msg_1"></span>
+        <code id="code_1" class="code cacher">
           <pre class="txt-left">
-            <i class="fa fa-clipboard"></i>
-            <code class="html"><?= htmlspecialchars('
-            <a href="http://sexshop.stocksexy.com/" target="_blank">
-              <img src="http://images.netcomvad.com/spb/soldesEte2015/739x208.jpg" width="739" height="208">
-            </a>') ?></code>
+            <code class="html small" id="clipboard-text_1"><?= htmlspecialchars('<a href="http://sexshop.stocksexy.com/" target="_blank">'."\n\t".'<img src="http://images.netcomvad.com/spb/soldesEte2015/239x208.jpg" width="739" height="208">'."\n".'</a>') ?></code>
           </pre>
-        </div>
+        </code>
       </figcaption>
     </figure>
   </div>
@@ -98,12 +99,11 @@
       <img class="img-responsive center-block marge-down" src="http://images.netcomvad.com/spb/soldesEte2015/728x90.jpg">
       <figcaption class="txt-right">
         <button type="button" name="button">Voir le code <i class="fa fa-caret-down"></i></button>
+        <button class="code_to_copy" rel="msg_2" id="target-to-copy_2" data-clipboard-target="clipboard-text_2" type="button" name="button" alt="copier le code" title="copier le code"><i class="fa fa-clipboard"></i></button>
+        <span class="cacher msg_2"></span>
         <div class="code">
           <pre class="txt-left">
-            <code class="html"><?= htmlspecialchars('
-            <a href="http://sexshop.stocksexy.com/" target="_blank">
-              <img src="http://images.netcomvad.com/spb/soldesEte2015/728x90.jpg" width="728" height="90">
-            </a>') ?></code>
+            <code class="html small" id="clipboard-text_2"><?= htmlspecialchars('<a href="http://sexshop.stocksexy.com/" target="_blank">'."\n\t".'<img src="http://images.netcomvad.com/spb/soldesEte2015/728x90.jpg" width="728" height="90">'."\n".'</a>') ?></code>
           </pre>
         </div>
       </figcaption>
@@ -115,12 +115,11 @@
       <img class="img-responsive center-block marge-down" src="http://images.netcomvad.com/spb/soldesEte2015/480x150.jpg">
       <figcaption class="txt-right">
         <button type="button" name="button">Voir le code <i class="fa fa-caret-down"></i></button>
+        <button class="code_to_copy" rel="msg_2" id="target-to-copy_3" data-clipboard-target="clipboard-text_3" type="button" name="button" alt="copier le code" title="copier le code"><i class="fa fa-clipboard"></i></button>
+        <span class="cacher msg_3"></span>
         <div class="code">
           <pre class="txt-left">
-            <code class="html"><?= htmlspecialchars('
-            <a href="http://sexshop.stocksexy.com/" target="_blank">
-              <img src="http://images.netcomvad.com/spb/soldesEte2015/480x150.jpg" width="480" height="150">
-            </a>') ?></code>
+            <code class="html small" id="clipboard-text_3"><?= htmlspecialchars('<a href="http://sexshop.stocksexy.com/" target="_blank">'."\n\t".'<img src="http://images.netcomvad.com/spb/soldesEte2015/480x150.jpg" width="480" height="150">'."\n".'</a>') ?></code>
           </pre>
         </div>
       </figcaption>
