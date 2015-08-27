@@ -16,6 +16,7 @@ if (isset($title)) {
   <link rel="stylesheet" href="/assets/css/normalize.css" media="screen">
   <link rel="stylesheet" href="/assets/css/main.css" media="screen">
   <link rel="stylesheet" href="/assets/css/bootstrap.css" media="screen">
+  <link rel="stylesheet" href="/assets/css/table.css" media="screen">
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css" media="screen">
   <link rel="stylesheet" href="/assets/css/style.css" media="screen">
   <title>Busyx | <?= $title ?></title>
@@ -32,7 +33,7 @@ if (isset($title)) {
     </div>
     <div class="col-xs-8 mainLogo">
       <!-- <img class="center-block" src="/assets/img/logo_busyx.jpg" /> -->
-        <img class="center-block" src="/assets/img/logo.png" />
+        <a href="?p=home"><img class="center-block" src="/assets/img/logo.png" /></a>
       <!-- <h1 class="txt-center txt-white logo_busyx"><span class="txt-whiter"><span class="logo_B">B</span>USY</span><span class="logo_x txt-orange bg_round">X</span><span class="txt-white">.COM</span></h1> -->
     </div>
     <div class="col-xs-2">
@@ -58,9 +59,9 @@ if (isset($title)) {
         <?php foreach ($position as $key => $value): ?>
           <?php $firstPosItem = array_values($array)[0]; ?>
           <?php if ($key == $firstPosItem): ?>
-            <li class="first"><a href="<?= $link[$key] ?>"><?= str_replace('_', ' ', $value) ?></a></li>
+            <li class="first"><a href="<?= $link[$key] ?>"><?= ucfirst(str_replace('_', ' ', $value)) ?></a></li>
           <?php else: ?>
-            <li class="current"><a href="<?= $link[$key] ?>"><?= str_replace('_', ' ', $value) ?></a></li>
+            <li class="current"><a href="<?= $link[$key] ?>"><?= ucfirst(str_replace('_', ' ', $value)) ?></a></li>
           <?php endif; ?>
         <?php endforeach; ?>
       </ul>

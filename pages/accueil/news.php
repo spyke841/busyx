@@ -18,21 +18,21 @@
 </div>
 
 <?php for ($i=0; $i < 5; $i++):?>
-<h2 class="entete">SOLDES</h2>
-  <?php if ($i%2 == 0): ?>
-<div class="bg_white">
-  <?php else: ?>
-<div class="bg_grey">
-  <?php endif; ?>
+<h1 class="entete">SOLDES</h1>
+<div class="wrapper">
   <div class="container">
   <article class="articleNews row">
     <div class="col-md-12">
-      <div class="news">
-        <p>
+      <div class="news txt-justify">
+        <?php if ($i%2 == 0): ?>
+          <img class="img-responsive pull-left img-text img-txt" src="assets/img/400x400.jpg"/>
+          <?php else: ?>
+          <img class="img-responsive pull-right img-text img-txt" src="assets/img/400x400.jpg"/>
+        <?php endif; ?>
+        <p class="text_right">
           Les SOLDES d'été 2015 commencent le 24 juin et il y a des bandeaux spécialement dédiés à la mise en avant des soldes sur vos espaces publicitaires !
           Rendez-vous dans les bandeaux de pub > catégorie bannières génériques pour user et abuser des bandeaux SOLDES:
         </p>
-        <img class="img-responsive center-block" src="assets/img/400x400.jpg" alt="" />
         <p>
           Une page spéciale avec une sélection d'articles soldés est disponible sur votre boutique! Choisissez ce lien et proposez à vos visiteurs d'accéder directement aux SOLDES en dirigeant votre trafic sur la page Keywords !
         </p>

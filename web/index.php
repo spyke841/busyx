@@ -1,7 +1,11 @@
 <?php
 unset($p);
 if (isset($_GET['p'])) {
-  $p = $_GET['p'];
+  if ($_GET['p'] == 'accueil') {
+    $p = 'home';
+  } else {
+    $p = $_GET['p'];
+  }
 } else {
   $p = 'home';
 }
