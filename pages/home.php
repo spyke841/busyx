@@ -43,6 +43,7 @@ $stylesheet[] = 'anim_accueil';
           <span class="embeed_anim">
             <span class="t1">Créez les univers<br>qui vous ressemblent !</span>
             <span class="t2">Découvrez les marques <br>blanches TOTALES</span>
+            <span class="t3">Appréciez les boutiques Sexy <br>100% PARAMÉTRABLES</span>
           </span>
         </div>
       </div>
