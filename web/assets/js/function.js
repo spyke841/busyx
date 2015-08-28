@@ -1,5 +1,26 @@
-
+$.fn.infobulle = function( txt, color){
+	var hauteur = this.outerHeight(true),
+	distance = this.position(),
+	classname = this.attr('class');
+  if (!color) {
+    color = 'normal';
+  } else {
+    color = color;
+  }
+  // console.log(hauteur);
+	this.hover(function() {
+      $(this).css('position', 'relative');
+			$('.infobulle').remove();
+			$(this).append('<div class="infobulle" style="top:-5px;left:-5px;"></div>');
+			$('.infobulle').append('<div class="infobulle_inner ' + color + '">' + txt + '</div>');
+	}, function() {
+		$('.infobulle').remove();
+	});
+	return this;
+};
 $(document).ready(function(){
+  $('.code_to_copy').infobulle('copier le code');
+
   $('#nav-icon').click(function(e){
     e.preventDefault();
     if ($('#rideau').length > 0) {
@@ -25,24 +46,22 @@ $(document).ready(function(){
     $('#aside nav').css({paddingTop: dist});
   });
 
-  var code_to_copy = $('.code_to_copy');
-  for (var i = 0; i < code_to_copy.length; i++) {
-    var clientTarget = new ZeroClipboard( $("#target-to-copy_" + i));
-  }
-  $('button.code_to_copy').click(function(){
-    rel_copy = $(this).attr('rel');
-    // console.log(rel_copy);
-    $('.' + rel_copy).html('<br>code copié').fadeIn().delay(500).fadeOut();
-  });
+  var codeToCopy = new ZeroClipboard($('.code_to_copy'));
+  codeToCopy.on( "ready", function( readyEvent ) {
+    // alert( "ZeroClipboard SWF is ready!" );
+
+    codeToCopy.on( "aftercopy", function( event ) {
+      // `this` === `codeToCopy`
+      // `event.target` === the element that was clicked
+      // event.target.style.display = "none";
+      // console.log($(event.target).attr('rel'));
+      $('.' + $(event.target).attr('rel')).html('<br>code copié').fadeIn( 300 ).delay( 800 ).fadeOut( 400 );
+    } );
+  } );
+
   $('.view_code').click(function(){
     // console.log($(this).attr('rel'));
-    if ($('#' + $(this).attr('rel')).is(":visible")) {
-      $('#' + $(this).attr('rel')).fadeOut();
-    }
-    else {
-      $('#' + $(this).attr('rel')).fadeOut();
-    }
-    // $('#' + $(this).attr('rel')).toggleClass('cacher');
-  })
+    $('#' + $(this).attr('rel')).toggleClass('cacher');
+  });
 
 });

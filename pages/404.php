@@ -1,4 +1,8 @@
 <div class="en_avant">
-  <h1>Page Not Found :(</h1>
-  <p><?= $not_found ?></p>
+  <div class="container">
+    <div class="row">
+      <h1>Page non trouvée :(</h1>
+      <p><?= $not_found ?></p>
+    </div>
+  </div>
 </div>

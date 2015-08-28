@@ -10,6 +10,7 @@ if (isset($_GET['p'])) {
   $p = 'home';
 }
 $routes = ['home' => 'home',
+          'accueil_client' => 'Accueil',
           'accueil' => [
                       'news' => 'News',
                       'dernieres_commandes' => 'Dernières commandes',
