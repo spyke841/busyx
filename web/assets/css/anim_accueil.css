@@ -7,7 +7,7 @@
 }
 .anim_mb::after {
   content: '';
-  z-index: 999;
+  z-index: 0;
   position: absolute;
   background-color: #E75500;
   width: 500px;

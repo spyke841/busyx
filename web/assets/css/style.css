@@ -100,6 +100,15 @@ figcaption {
 .txt-justify {
   text-align: justify;
 }
+.txt-big {
+  font-size: 2.5em;
+}
+.txt-border-orange {
+  text-shadow: 2px 0 0 #E75500, -2px 0 0 #E75500, 0 2px 0 #E75500, 0 -2px 0 #E75500, 1px 1px #E75500, -1px -1px 0 #E75500, 1px -1px 0 #E75500, -1px 1px 0 #E75500;
+}
+.font-exo {
+  font-family: 'exo2-extraboldItalic';
+}
 .upper {
   text-transform: uppercase;
 }
