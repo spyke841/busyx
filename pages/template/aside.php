@@ -1,6 +1,7 @@
 <aside id="aside" class="left" style="z-index:9999;">
   <nav>
     <ul>
+      <li><a href="?p=accueil_client"><i class="fa fa-heartbeat"></i> Index</li>
       <li><a href="#"><i class="fa fa-home"></i> Accueil<i class="pull-right fa fa-caret-down"></i></a>
         <ul>
           <li><a href="?p=accueil.news">News</a></li>

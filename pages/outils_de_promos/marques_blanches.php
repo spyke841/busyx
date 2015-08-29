@@ -1,4 +1,7 @@
-<?php $title = 'Marques Blanches'; ?>
+<?php
+$title = 'Marques Blanches';
+$link[0] = '?p=accueil_client';
+?>
 <h1 class="entete">Marques Blanches</h1>
 <div class="wrapper">
 <section class="container">

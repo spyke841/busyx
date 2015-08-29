@@ -1,4 +1,7 @@
-<?php $title = 'Dernières commandes'; ?>
+<?php
+$title = 'Dernières commandes';
+$link[0] = '?p=accueil_client';
+?>
 <h1 class="entete">Dernières commandes</h2>
 <div class="wrapper">
 <section class="container">

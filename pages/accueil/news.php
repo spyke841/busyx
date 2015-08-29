@@ -1,4 +1,7 @@
-<?php include '../pages/template/pagination.php'; ?>
+<?php
+include '../pages/template/pagination.php';
+$link[0] = '?p=accueil_client';
+?>
 <?php for ($i=0; $i < 5; $i++):?>
 <h1 class="entete">SOLDES</h1>
 <div class="wrapper">

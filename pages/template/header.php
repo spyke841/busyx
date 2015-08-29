@@ -18,8 +18,14 @@ if (isset($title)) {
   <link rel="stylesheet" href="/assets/css/bootstrap.css" media="screen">
   <link rel="stylesheet" href="/assets/css/table.css" media="screen">
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css" media="screen">
+  <link rel="stylesheet" href="/assets/css/syntax/atelier-heath.light.css">
+  <?php if (isset($stylesheet) && is_array($stylesheet)): ?>
+    <?php foreach ($stylesheet as $key => $value): ?>
+      <link rel="stylesheet" href="/assets/css/<?= $value ?>.css">
+    <?php endforeach; ?>
+  <?php endif; ?>
+
   <link rel="stylesheet" href="/assets/css/style.css" media="screen">
-  <link rel="stylesheet" href="/assets/css/syntax/default.css">
   <title>Busyx | <?= $title ?></title>
 </head>
 <body>
@@ -54,6 +60,7 @@ if (isset($title)) {
     <div class="clearfix"></div>
   </nav>
 
+  <?php if ($position): ?>
   <div class="container">
     <div class="row">
       <small>
@@ -71,3 +78,4 @@ if (isset($title)) {
       </ul>
     </div>
   </div>
+  <?php endif; ?>

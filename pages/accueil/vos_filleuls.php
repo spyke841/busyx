@@ -1,4 +1,7 @@
-<?php $title = 'Vos filleuls'; ?>
+<?php
+$title = 'Vos filleuls';
+$link[0] = '?p=accueil_client';
+?>
 <h1 class="entete">Vos filleuls</h2>
 <div class="wrapper">
 <section class="container">
